@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+        <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="style.css">
+        <!--스와이퍼슬라이드-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!--스와이퍼슬라이드-->
+    
+    <!-- gsap 플러그인 ---gsap / scrolltrigger / text 순-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/TextPlugin.min.js"></script>
+    <!-- gsap 플러그인 ---gsap / scrolltrigger / text 순-->
+    
+    
+        <!--노토산스 웹폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--노토산스 웹폰트-->
+
+    
+   
+    <!--스와이퍼슬라이드-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--스와이퍼슬라이드-->
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--폰트어썸-->
+    <script src="mobileGNB.js" defer></script>
+</head>
+<body>
+    <div class="mobile_gnb">
+        <div class="mobile_gnb_container">
+        <div class="mobile_gnb_header">
+            <h4>로그인 하시면 보다 다양한<br> 서비스를 이용하실 수 있습니다.</h4>
+            <span class="login"><a href="#">로그인</a></span>
+            <span class="legister"><a href="#">회원가입</a></span>
+        </div>
+        <ul>
+            <li><a href="#">진료예약</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">인사말</a>
+                    <a href="#">연혁</a>
+                    <a href="#">미션과비전</a>
+                    <a href="#">병원조직도</a>
+                    <a href="#">협력병원안내</a>
+                    <a href="#">첨단의료장비</a>
+                </div>
+            </li>
+            <li><a href="#">병원소개</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">인사말</a>
+                    <a href="#">연혁</a>
+                    <a href="#">협력병원안내</a>
+                </div></li>
+            <li><a href="#"> 이용안내</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">진료안내</a>
+                    <a href="#">진료일정표</a>
+                </div></li>
+            <li><a href="#">진료과</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">내과</a>
+                    <a href="#">심장내과</a>
+                    <a href="#">신경과</a>
+                </div></li>
+            <li><a href="#">클리닉</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">내시경클리닉</a>
+                    <a href="#">대장항문클리닉</a>
+                    <a href="#">부인과클리닉</a>
+                    <a href="#">뇌졸중클리닉</a>
+                    <a href="#">하지정맥류클리닉</a>
+                    <a href="#">신장질환클리닉</a>
+                </div></li>
+            <li><a href="#">상담안내</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">상담</a>
+                </div></li>
+            <li><a href="#">정보마당</a><i class="fas fa-chevron-down"></i></span>
+                <div class="mobile_submenu">
+                    <a href="#">공지사항</a>
+                </div></li>
+        </ul>
+    </div>
+    </div>
+<div class="container">
+<section class="panel first">
+    <div class="fixed_nav">
+        <ul>
+            <li><i class="fas fa-stethoscope"></i><br><span>진료예약</span></li>
+            <li><i class="fas fa-map-marker-alt"></i><br><span>오시는길</span></li>
+            <li><i class="fas fa-briefcase-medical"></i><br><span>진료과안내</span></li>
+            <li><i class="fas fa-user-md"></i><br><span>상담안내</span></li>
+        </ul>
+    </div>
+    <!--배경 슬라이드-->
+    <div class="swiper mySwiper" style="position:absolute; z-index:-99; overflow: hidden; width:100%; ">
+      <div class="swiper-wrapper" style="height:100vh;">
+        <div class="swiper-slide">
+            <img src="images/hospital_bg.jpg" style="width:100%;"> 
+          </div>
+        <div class="swiper-slide"><img src="images/main_bg1.jpg" style="width:100%; "></div>
+        <div class="swiper-slide"><img src="images/main_bg2.jpg" style="width:100%; height:100vh;"></div>
+
+      </div>
+        <!--
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+        -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!--배경 슬라이드-->
+    <!--모바일 정적이미지-->
+
+	<header>
+        <div class="header_top_wrap">
+        <div class="header_top">
+            <ul>
+                <li><a href="#">진료과 바로가기</a></li>
+                <li><a href="#">센터 바로가기</a></li>
+            </ul>
+            <a href="index.html" style="padding:4px 2px 2px 8px; box-sizing: border-box;">
+                <img src="images/logo.png" alt="로고" style="width:140px;" class="desk_logo">
+                <img src="images/mobile_logo.png" alt="로고" style="width:140px;" class="mobile_logo">
+            </a>
+            <ul class="header_top_right">
+                <li><a href="#">마이페이지<i class="far fa-user"></i></a></li>
+                <div class="language_wrapper">
+                <li><a href="#" class="language_btn">KOR</a>
+                        <ul class="language_btn_submenu">
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">CHN</a></li>
+                    </ul>
+                </li>
+                </div>
+            </ul>
+            <div class="hamberger_btn">
+                <span class="btn_short_box"></span>
+                <span class="btn_long_box_f"></span>
+                <span class="btn_long_box_l"></span>
+                <span class="btn_short_box"></span>
+            </div>
+        </div>
+        </div>
+        <div class="header_bottom_wrap">
+        <div class="header_bottom">
+            <ul>
+                <li><a href="sub_page_introduce/sub_introduce.html">병원소개</a></li>
+                <li><a href="suv_page_info/sub_med_info.html">이용안내</a></li>
+                <li><a href="suv_page_department/sub_department.html">진료과</a></li>
+                <li><a href="#">클리닉</a></li>
+                <li><a href="#">진료센터</a></li>
+                <li><a href="#">상담안내</a></li>
+                <li><a href="#">정보마당</a></li>
+            </ul>
+        </div>
+            
+            
+            
+        <div class="header_bottom_submenu">
+            <div class="header_bottom_submenu_inner">
+            <ul>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">미션과비전</a></li>
+                <li><a href="#">병원조직도</a></li>
+                <li><a href="#">협력병원안내</a></li>
+                <li><a href="#">첨단의료장비</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">진료안내</a></li>
+                <li><a href="#">진료일정표</a></li>
+                <li><a href="#">층별안내</a></li>
+                <li><a href="#">주요전화번호</a></li>
+                <li><a href="#">위치/교통</a></li>
+                <li><a href="#">주차안내</a></li>
+                <li><a href="#">장례식장</a></li>
+            </ul>      
+            <ul>
+                <li><a href="#">내과1</a></li>
+                <li><a href="#">내과2</a></li>
+                <li><a href="#">내과3</a></li>
+                <li><a href="#">내과5</a></li>
+                <li><a href="#">1심장내과</a></li>
+                <li><a href="#">2심장내과</a></li>
+                <li><a href="#">1신경과</a></li>
+                <li><a href="#">2신경과</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">내시경클리닉</a></li>
+                <li><a href="#">대장항문클리닉</a></li>
+                <li><a href="#">부인과클리닉</a></li>
+                <li><a href="#">뇌졸중클리닉</a></li>
+                <li><a href="#">하지정맥류클리닉</a></li>
+                <li><a href="#">신장질환클리닉</a></li>
+            </ul>
+                
+            <ul>
+                <li><a href="#">심혈관센터</a></li>
+                <li><a href="#">소화기센터</a></li>
+                <li><a href="#">척추관절센터</a></li>
+                <li><a href="#">종합검진센터</a></li>
+                <li><a href="#">응급의료기관</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">상담</a></li>
+            </ul>
+                
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">광주인스토리</a></li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">병원보</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="hospital_contents">
+        <h2>환자가 안전한 병원</h2>
+        <p>권역응급의료센터 · 희귀질환 경기서북부권 거점센터
+            <br>암통합지원센터 · 인천권역심뇌혈관질환센터
+        </p>
+        <section class="hospital_btn">
+            <a href="#" class="btn1">진료예약
+                <i class="far fa-calendar-check"></i>
+                <p>빠른예약을 도와드립니다.</p>
+                
+                <span class="plus_btn"></span>
+                <div class="sub_desc">
+                <span class="sub_btn reservation">
+                    예약하기
+                </span>
+                    
+                </div>
+            </a>
+            <a href="#" class="btn2">진료시간
+                <i class="fas fa-history"></i>
+                <p>진료시간을 안내해드립니다.</p>
+                
+                <span class="plus_btn"></span>
+                <div class="sub_desc">
+                    <p>평일 : 오전 09:00 ~ 오후 17:30</p>
+                    <p>토요일 : 오전 09:00 ~ 오후 17:30</p>
+                    <span class="sub_btn timecheck">
+                        진료시간확인
+                    </span>
+                    
+                </div>
+            </a>
+            <a href="#" class="btn3">전화번호
+                <i class="fas fa-headset"></i>
+                <p>부서별 전화번호를 알려드립니다.</p>
+                <span class="plus_btn"></span>
+                <div class="sub_desc">
+                <p>대표전화: <span class="p_num">062) 260-7000</span></p>
+                <span class="sub_btn number">
+                    부서별전화번호
+                </span>
+                    
+                </div>
+            </a>
+        </section>
+    </section>
+
+</section>
+<section class="panel second">
+    <div class="second_inner">
+        <div class="department_title">
+        <h2>Department</h2>
+        
+    </div>
+    
+    <div class="department_contents">
+            <ul class="department_contents_title">
+                <li class="active">센터소개</li>
+                <li>클리닉</li>
+            </ul>
+            <div class="department_contents_area">
+            <ul class="sub_title first active">
+                <li class="active">척추관절센터</li>
+                <li>소화기센터</li>
+                <li>심혈관센터</li>
+                <li>종합검진센터</li>
+                <li>응급의료센터</li>
+            </ul>
+                <ul class="sub_title second">
+                <li class="active">내시경클리닉</li>
+                <li>대장항문클리닉</li>
+                <li>부인과클리닉</li>
+                <li>뇌졸중클리닉</li>
+                <li>하지정맥류클리닉</li>
+                <li>신장질환클리닉</li>
+                </ul>
+                
+            <!-- 센터정보 콘텐츠-->
+            <div class="department_main_contents first active"> 
+                <div class="contents_container">
+                    <div class="center_contents active">
+                        <div class="center_contents_img">
+                            <img src="images/born.jpg">
+                        </div>
+                        <div class="center_contents_desc">
+                            <h3>척추관절센터</h3>
+                            <p>척추관절센터는 경험이 풍부하고 실력 있는<br>
+                            정형외과 및 척추신경외과 의료진이 유기적인 협진 시스템을<br>
+                            운영하여 척추관절 문제를 치료하고 있으며<br>
+                            재활센터를 통해 지속적인 사후관리를 시행하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/stomach.jpg">
+                        </div>
+                        <div class="center_contents_desc">
+                            <h3>소화기센터</h3>
+                            <p>소화기센터는 임상경험이 풍부환 소화기 내과 및 외과의<br>
+                            전문 의료진이 식도,위,소장,대장 등 소화에 관여하는<br>
+                            소화기 위장관 질환에 대한 저문적인 협진 시스템을 운영하여<br>
+                            정확한 진료와 치료를 진행하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/vessel.jpg">
+                        </div>
+                        <div class="center_contents_desc">
+                            <h3>심혈관센터</h3>
+                            <p>심혈관센터는 경험이 풍부하고 실력 있는<br>
+                            내과및 심장내과 전문의료진이 유기적인 협진 시스템을<br>
+                            운영하여 심혈관 관련 문제를 치료하고 있으며<br>
+                            연구센터를 통해 지속적인 사후관리를 시행하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/check_center.jpg" >
+                        </div>
+
+                        <div class="center_contents_desc">
+                            <h3>척추관절센터</h3>
+                            <p>건강증진센터는 종합검진, 국민건강보험공단 검진,<br>
+                             신체검사, 해외검진 등 검진을 통한 질병의 예방<br>
+                            및 조기치료에 힘쓰고 있습니다. 정확한 검진을 위해<br>
+                            최신 의료기를 보유하고 있으며 경험이 풍부한 의료진이<br>
+                            최선을 다해 진단하고 치료하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/emergency.jpg" >
+                        </div>
+                        <div class="center_contents_desc">
+                            <h3>응급의료센터</h3>
+                            <p>척추관절센터는 경험이 풍부하고 실력 있는<br>
+                            정형외과 및 척추신경외과 의료진이 유기적인 협진 시스템을<br>
+                            운영하여 척추관절 문제를 치료하고 있으며<br>
+                            재활센터를 통해 지속적인 사후관리를 시행하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            
+  
+            
+            <div class="department_main_contents second"> 
+                <div class="contents_container">
+                    <div class="center_contents active">
+                        <div class="center_contents_img">
+                            <img src="images/endoscope.jpg">
+                        </div>
+                        <div class="center_contents_desc">
+                            <h3>내시경클리닉</h3>
+                            <p>속쓰림, 식후 상복부 불쾌감, 흉부통증, 소화불량<br>
+                            등의 증상이 있는 경우와 이전에 궤양을 치료받았던 경우의<br>
+                             재검사, 위절제 수술을 시행받은 경우의 주기적인 점검 등에 <br>
+                             검사가 필요합니다.그리고 우리나라에서 위암은 증상없이 발견되는<br>
+                            예가 로 40세 이상에서는 증상에 상관없이 1년에 1회 이상시경<br>
+                            검사가 조기 위암을 발견하는데 반드시 필요합니다.<br>
+                            재활센터를 통해 지속적인 사후관리를 시행하고 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/largeintesine.jpg">
+                        </div>
+                        <div class="center_contents_desc">
+                            
+                          
+                            
+                            <h3>대장항문클리닉</h3>
+                            <p>아직까지 치질의 발생 원인을 정확히 알지 못합니다만,<br>
+                            최근에 제시된 학설에 의하면 항문의 점막하층에 있는 '항문쿠션"<br>
+                            이 지속적으로 압력을 받아 점막하 평활근이 손상 되어 이 항문 쿠션이<br>
+                            아래로 빠져나오는 것입니다. 치질은 빠른 대처가 재발가능성을<br>
+                            줄이는데 가장 큰 효과를 볼수있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/Obstetrics.jpg">
+                        </div>
+                        
+                        <div class="center_contents_desc">
+                            <h3>부인과클리닉</h3>
+                            <p>부인과 클리닉은 경험이 풍부하고 실력 있는<br>
+                            산부인과 전문 의료진이 내진 및 도말, 배양 검사 등을 통해 진단을 하고<br>
+                            원인균에 따른 항생제 치료를 시행합니다.<br>
+                            만성적일 경우 원추절제술이나 소작법 등이 적용될 수도 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/brain.jpg">
+                        </div>
+
+                        
+                        <div class="center_contents_desc">
+                            <h3>뇌졸중클리닉</h3>
+                            <p>"무서운 뇌졸중" 1차예방은 원인 노출을 방지하는것으로<br>
+                            고혈압을 조기에 철저히 치료하고 관리함으로써 그 발생을<br>
+                            방지하는것입니다. 동맥경화의 예방으로는 위험요소들을<br>
+                            제거하거나 교정하는것이 아주중요합니다 <br>
+                            고지혈증, 고혈압, 흡연, 당뇨병, 비만등이 이에 해당합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                        <div class="center_contents_img">
+                            <img src="images/haji.jpg">
+                        </div>
+                        
+                        <div class="center_contents_desc">
+                            <h3>하지정맥류 클리닉</h3>
+                            <p>정맥류 치료는 크게 3가지로 나누어집니다.<br>
+                            첫째는 보존적 요법으로 적당한 운동과 휴식,<br>
+                            의료용 압박스타킹 착용등이 있고, 둘째로 혈관경화요법<br>
+                            이 있으며, 셋째로는 수술적 요법이 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="center_contents">
+                    <div class="center_contents_img">
+                        <img src="images/kidney.jpg">
+                    </div>
+                        
+                
+                    <div class="center_contents_desc">
+                        <h3>신장질환 클리닉</h3>
+                        <p>혈액투석은 반투막을 경계로 한 쪽에는 노폐물이 축척된 환자의<br>
+                        혈액과 다른한편에는 정상인의 세포외액과 조성이 비슷한 투석액을<br>
+                        서로 반대방향으로 흐르도록 하여 혈액내에 축척된 요소와 다른<br>
+                        노폐물을 포함한 용질을 농도차이에 의한 확산에 의해 제거하고<br>
+                        정수압의 차이를 만들어 혈장을 여과시켜 혈장내의 과다한 수분을<br>
+                            제거하는 원리를 이용하고 있습니다.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 센터정보 콘텐츠-->
+            
+                
+                
+            
+            </div>
+        </div>
+    </div>
+</section>
+<section class="panel third">
+	<div class="third_inner">
+        <div class="health_title">
+        <h2>Health</h2>
+        <p id="health_subtitle">건강,의료정보를 사랑이 넘치는 광주병원에서 알려드립니다.</p>
+        </div>
+        
+        <section class="health_contents">
+        <div class="health_contents_box">
+            <div class="health_contents_box_top">
+                <h4>건강정보</h4>
+                <span class="health_icon"></span>
+            </div>
+            <div class="health_contents_box_bottom">
+                <span>COVID-19 <br>백신접종 <br>가이드라인</span>
+            </div>
+        </div>
+        <div class="health_contents_box">
+            <div class="health_contents_box_top">
+                <h4>영양정보</h4>
+                <span class="health_icon"></span>
+            </div>
+            <div class="health_contents_box_bottom">
+                <span>물마시는습관 <br>얼마나 <br>중요할까?</span>
+            </div>
+        </div>
+        <div class="health_contents_box">
+            <div class="health_contents_box_top">
+                <h4>약품정보</h4>
+                <span class="health_icon"></span>
+            </div>
+            <div class="health_contents_box_bottom">
+                <span>처방시 <br>꼭 <br> 확인하세요</span>
+            </div>
+        </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer_inner">
+            <div class="footer_top">
+                <ul>
+                    <li><a href="#">전남대학교병원</a></li>
+                    <li><a href="#">서울아산병원</a></li>
+                    <li><a href="#">건강inHiHoc</a></li>
+                </ul>
+            </div>
+            <div class="footer_top_middle">
+                <ul>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">주요전화번호</a></li>
+                    <li><a href="#">고객의소리</a></li>
+                    <li><a href="#">환자권리장전</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">장례식장</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#" class="pn">전화번호 : <span class="phone_number">062) 260-7111</span></a></li>
+                    <li><a href="#">FAX: 062) 260-7111</a></li>
+                </ul>
+            </div>
+            <div class="footer_middle">
+                <ul>
+                    
+                    <li><a href="#">광주광역시 북구 면양로 139번길51 (두암동) 광주병원</a></li>
+                </ul>
+            </div>
+            
+            <div class="copy_right">
+                <p>Copyright 2012 by Gwaingju hospitia All rights reserved</p>
+            </div>
+            
+            <div class="footer_bottom">
+                <a href="#" class="footer_btn">협력병원 +</a>
+                <a href="#" class="footer_btn">관련기관 +</a>
+            </div>
+        </div>
+    </footer>
+</section>
+<!-- <section class="panel fourth">
+	
+</section> -->
+    </div>
+        </body>
+    <!--슬라이드 스냅효과 -->
+    <script>
+    ScrollTrigger.defaults({
+    toggleActions: "restart pause resume pause",
+    scroller: ".container"
+        });
+
+    </script>
+
+    <script>
+
+       window.onload=function(){
+        var screenSize= document.documentElement.scrollWidth;
+        const hospitalA = document.querySelectorAll(".hospital_contents .hospital_btn a")
+
+        function hosBtnHandler (e){
+            if(e.currentTarget!==e.target){
+                    return ;
+                }
+                e.target.childNodes[7].classList.add("active")
+        }
+        function delHosBtnHandler (e){
+            if(e.currentTarget!==e.target){
+                    return ;
+                }
+                e.target.childNodes[7].classList.remove("active")
+        }
+        hospitalA.forEach(item => {
+            item.addEventListener("mouseover",hosBtnHandler)
+            item.addEventListener("mouseleave",delHosBtnHandler)
+        })
+
+           /* 메인화면 텍스트 및 버튼들 애니메이션 효과*/
+     const tl = gsap.timeline();    
+           
+     tl.to(".hospital_contents h2",{
+            opacity:1,
+            y:-260,
+            duration:2
+         
+     });
+     tl.to(".hospital_contents > p",{
+            opacity:1,
+            duration: 0.9
+    });
+     tl.to(".hospital_btn>a:first-child",{
+            y:-100,
+            opacity:1,
+            duration: 0.7
+        });
+     tl.to(".hospital_btn>a:nth-child(2)",{
+            y:-100,
+            opacity:1,
+            duration: 0.7
+        });
+        tl.to(".hospital_btn>a:last-child",{
+                y:-100,
+        opacity:1,
+        duration: 0.7
+        });
+           /* 메인화면 텍스트 및 버튼들 애니메이션 효과*/
+           /* 스와이퍼 슬라이드 */
+        var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        autoplay: {
+          delay: 9000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+            /* 스와이퍼 슬라이드 종료 */
+    
+              /*메인메뉴 하스피탈버튼 호버효과*/
+           
+            //document.documentElement.scrollWidth 반응형 스크린값을 구하는 코드   
+     /*    var screenSize=document.documentElement.scrollWidth;
+        if (screenSize>=960){
+            document.querySelector(".swiper mySwiper").re
+        }*/
+
+   /*     window.onresize = function() {
+
+            var screenSize= document.documentElement.scrollWidth;
+            console.log(screenSize)
+           
+            if(screenSize<=960){
+                   const box = document.querySelectorAll(".sub_desc");
+                   for(var i=0; i>box.length; i++){
+                       box[i].style.display="none"
+                   }
+                }else{
+                    elel()
+                }
+        window.addEventListener('resize', function() {
+            var screenSize= document.documentElement.scrollWidth;
+            console.log(screenSize)
+           
+            if(screenSize<=960){
+                   const box = document.querySelectorAll(".sub_desc");
+                   for(var i=0; i>box.length; i++){
+                       box[i].style.display="none"
+                   }
+                }else{
+                    elel()
+                }
+            console.log('Resizing...');
+            }, true);
+        }*/
+        //모바일 크기에서는 슬라이드다운 사용하지않음
+
+  
+                //버튼 슬라이드다운
+
+        function elel(){
+            if(screenSize>=960){
+                return ;
+            }
+           $(".hospital_contents .hospital_btn a").mouseover(function(){
+            $(this).find(".sub_desc").slideDown()
+           }).mouseleave(function(){
+            $(this).find(".sub_desc").slideUp()
+           })
+        }
+            
+           
+           
+        /*랭귀지버튼 클릭 start*/
+        const lngBtn = document.querySelector(".header_top .language_btn")
+        const lngBtnSm = document.querySelector(".language_btn_submenu")
+        var count = 0;
+    
+        lngBtn.addEventListener("click",()=>{
+            
+            count ++
+            
+            if(count%2 != 0){
+                lngBtnSm.style.opacity="1"
+            }else{
+                lngBtnSm.style.opacity="0"
+            }
+            
+            console.log(count)
+            
+            
+            
+        })
+        /*랭귀지버튼 클릭 end*/
+           
+           
+        //department 첫번째 탭메뉴 액티브효과   
+        const lis = document.querySelectorAll(".department_contents_title li")
+        const lisMc = document.querySelectorAll(".department_main_contents")
+        const subT = document.querySelectorAll(".sub_title")
+
+        console.log(lis)
+           lis.forEach((element,index)=>{
+               element.addEventListener("click",function(){
+                   
+                   //반복문으로 배열 전체를 선택하여 클래스를 다 지워버린다
+                   for (var i=0; i<lis.length; i++){
+                       lis[i].classList.remove("active");
+                       lisMc[i].style.display="none"
+                       subT[i].classList.remove("active")
+                       
+                   }
+                   
+                   
+                  //클릭된 객체에만 액티브를 부여한다 
+                   lis[index].classList.add("active");
+                   lisMc[index].style.display="block"
+                   subT[index].classList.add("active")
+
+               })
+           })
+           
+           
+           
+        //department 두번째  서브 탭메뉴 액티브효과   
+        const subTitleEl = document.querySelectorAll(".sub_title li")
+        
+            subTitleEl.forEach((element,index)=>{
+                element.addEventListener("click",function(){
+                  for(var i=0; i<subTitleEl.length; i++){
+                      subTitleEl[i].classList.remove("active");
+                  }  
+                  subTitleEl[index].classList.add("active");
+                })
+            })
+           
+           
+           
+        
+        //콘텐츠들 탭메뉴
+        const contentFirst = document.querySelectorAll(".sub_title.first >  li")
+        const contentInFirst=document.querySelectorAll(".department_main_contents.first .center_contents")
+        const contentSec = document.querySelectorAll(".sub_title.second >  li")
+        const contentInSec = document.querySelectorAll(".department_main_contents.second .center_contents")
+        
+        contentFirst.forEach((el,index)=>{
+            el.addEventListener("click",function(){
+                for(var i =0; i<contentInFirst.length;i++){
+                    contentInFirst[i].style.display="none"
+                }
+                contentInFirst[index].style.display="block"
+            })
+        })
+        
+        contentSec.forEach((el,index)=>{
+            el.addEventListener("click",function(){
+                for(var i =0; i<contentInSec.length; i++){
+                    contentInSec[i].style.display="none"
+                }
+                contentInSec[index].style.display="block"
+            })
+        })
+            //메인 GNB 네비게이션 효과
+        
+           const headerBw = document.querySelector(".header_bottom_wrap");
+           const headerBwSm = document.querySelector(".header_bottom_submenu");
+           
+           headerBw.addEventListener("mouseover",function(){
+               headerBwSm.style.display="block";
+               this.classList.add("active");
+               document.querySelector(".header_bottom_submenu").classList.add("active")
+           });
+           headerBw.addEventListener("mouseout",function(){
+               headerBwSm.style.display="none";
+               this.classList.remove("active");
+               document.querySelector(".header_bottom_submenu").classList.remove("active")
+           })
+           
+           
+       } ; 
+        
+          
+
+    </script>
+    
+    <!--Department 영역 다중탭메뉴 끝-->
+
+    
+    
+    
+    <script>
+        /*    gsap.registerPlugin(ScrollTrigger);
+            gsap.from('.department_title>h2', {
+              scrollTrigger: '.panel.second',
+                opacity:0,
+                x: 600,
+                duration: 4
+            });
+            gsap.from('.department_contents', {
+              scrollTrigger: '.panel.second',
+                opacity:0,
+                x: -2000,
+                duration: 4
+            });*/
+    </script>
+    <script>
+                gsap.registerPlugin(ScrollTrigger);
+                const tml = gsap.timeline({
+                    // 전체 타임라인에 추가할 수 있습니다!
+                    scrollTrigger: {
+                      trigger: ".panel.third",
+                    }
+                
+                  });   
+                tml.to(".third_inner .health_title>h2",{
+                        opacity:1,
+                        x:260,
+                        duration:2
+
+                 }).to("#health_subtitle",{
+                        opacity:1,
+                        duration:0.5,
+
+                 }).from(".health_contents_box:first-child",{
+                        opacity:0,
+                        y:100,
+                        duration:0.7,
+
+                 }).from(".health_contents_box:nth-child(2)",{
+                        opacity:0,
+                        y:100,
+                        duration:0.7,
+
+                 }).from(".health_contents_box:last-child",{
+                        opacity:0,
+                        y:100,
+                        duration:0.7,
+
+                 })
+        
+        
+    
+            
+                 
+    </script>
+    
+
+    
+    
+    
+    
+</html>

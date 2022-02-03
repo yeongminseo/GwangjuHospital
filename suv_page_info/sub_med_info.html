@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+        <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="sub_med_info.css">
+    
+    <!-- gsap 플러그인 ---gsap / scrolltrigger / text 순-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/TextPlugin.min.js"></script>
+    <!-- gsap 플러그인 ---gsap / scrolltrigger / text 순-->
+    
+    
+        <!--노토산스 웹폰트-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--노토산스 웹폰트-->
+    
+    
+    <script defer src="../common.js"></script>
+    
+    <!--폰트어썸-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--폰트어썸-->
+</head>
+    <body>
+    	<header>
+        <div class="header_top_wrap">
+        <div class="header_top">
+            <ul>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">마이페이지</a></li>
+            </ul>
+            <a href="../index.html" style="padding:4px 2px 2px 8px; box-sizing: border-box;">
+                <img src="images/sub_logo_3.png" alt="로고" style="width:140px;">
+            </a>
+            <ul>
+                <li><a href="#">마이페이지<i class="far fa-user"></i></a></li>
+                <div class="language_wrapper">
+                <li><a href="#" class="language_btn">KOR</a>
+                        <ul class="language_btn_submenu">
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">CHN</a></li>
+                    </ul>
+                </li>
+                </div>
+            </ul>
+        </div>
+        </div>
+        <div class="header_bottom_wrap">
+        <div class="header_bottom">
+            <ul>
+                <li><a href="../sub_page_introduce/sub_introduce.html">병원소개</a></li>
+                <li><a href="sub_med_info.html">이용안내</a></li>
+                <li><a href="../suv_page_department/sub_department.html">진료과</a></li>
+                <li><a href="#">클리닉</a></li>
+                <li><a href="#">진료센터</a></li>
+                <li><a href="#">상담안내</a></li>
+                <li><a href="#">정보마당</a></li>
+            </ul>
+        </div>
+            
+            
+            
+        <div class="header_bottom_submenu">
+            <div class="header_bottom_submenu_inner">
+            <ul>
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">미션과비전</a></li>
+                <li><a href="#">병원조직도</a></li>
+                <li><a href="#">협력병원안내</a></li>
+                <li><a href="#">첨단의료장비</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">진료안내</a></li>
+                <li><a href="#">진료일정표</a></li>
+                <li><a href="#">층별안내</a></li>
+                <li><a href="#">주요전화번호</a></li>
+                <li><a href="#">위치/교통</a></li>
+                <li><a href="#">주차안내</a></li>
+                <li><a href="#">장례식장</a></li>
+            </ul>      
+            <ul>
+                <li><a href="#">내과1</a></li>
+                <li><a href="#">내과2</a></li>
+                <li><a href="#">내과3</a></li>
+                <li><a href="#">내과5</a></li>
+                <li><a href="#">1심장내과</a></li>
+                <li><a href="#">2심장내과</a></li>
+                <li><a href="#">1신경과</a></li>
+                <li><a href="#">2신경과</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">내시경클리닉</a></li>
+                <li><a href="#">대장항문클리닉</a></li>
+                <li><a href="#">부인과클리닉</a></li>
+                <li><a href="#">뇌졸중클리닉</a></li>
+                <li><a href="#">하지정맥류클리닉</a></li>
+                <li><a href="#">신장질환클리닉</a></li>
+            </ul>
+                
+            <ul>
+                <li><a href="#">심혈관센터</a></li>
+                <li><a href="#">소화기센터</a></li>
+                <li><a href="#">척추관절센터</a></li>
+                <li><a href="#">종합검진센터</a></li>
+                <li><a href="#">응급의료기관</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">상담</a></li>
+            </ul>
+                
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">광주인스토리</a></li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">병원보</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+        <div class="sub_page_menu_wrap">
+               <ul>
+                <a href="../index.html"><i class="fas fa-home"></i></a>
+                <li class="sub_page_title_menu"><a href="#" >이용안내</a>
+                   <ul class="sub_submenu">
+                       <li><a href="#">병원소개</a></li>
+                       <li><a href="#">진료과</a></li> 
+                       <li><a href="#">클리닉</a></li> 
+                       <li><a href="#">진료센터</a></li> 
+                       <li><a href="#">상담안내</a></li> 
+                       <li><a href="#">정보마당</a></li> 
+                    </ul>
+                   </li>
+                <li class="sub_page_title_menu"><a href="#">진료안내</a>
+               <ul class="sub_submenu sub2">
+                       <li><a href="#">진료일정표</a></li>
+                       <li><a href="#">층별안내</a></li> 
+                       <li><a href="#">주요전화번호</a></li> 
+                       <li><a href="#">위치/교통</a></li> 
+                       <li><a href="#">주차안내</a></li> 
+                       <li><a href="#">장례식장</a></li> 
+                   
+                   </ul>
+                    
+                    </li>
+            </ul> 
+            </div>
+    </header>
+            <div class="sub_page_wrap">
+                
+                <div class="time_info_wrap">
+                    <h1>이용안내</h1>
+
+                <h2 class="info_title">진료시간</h2>
+
+                <table>
+                    <tr>
+                        <th>구분</th>
+                        <th style="border-right: none;">시간</th>
+                    </tr>
+                    <tr>
+                        <th>평일</th>
+                        <td>AM 9:00 ~ PM 05:30</td>
+                    </tr>
+                    <tr>
+                        <th>토요일</th>
+                        <td>AM 9:00 ~ PM 12:30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">응급의료센터 24시간 진료 (연중 무휴)     앰뷸런스 24시간대기 (062)260-7219</td>
+                    </tr>
+                </table>
+                </div>
+                
+                <div class="medical_info_wrap">
+
+
+                <h2 class="info_title">진료안내</h2>
+                    <div class="medical_info_inner">
+                        <ul>
+                            <li>
+                            <i class="far fa-edit"></i>
+                                <div class="text_area_wrapper">
+                                <p class="text_area title">
+                                01. 접수방법
+                                </p>
+                            <p class="text_area">병원에 도착하시면 꼭 접수를 해주셔야 진료가 진행됩니다.
+진료과 접수 직원에게 접수할 수 있습니다.
+무인 접수대에 병원등록번호 또는 주민등록 번호를 입력하거나 바코드를 스캔하여 접수할 수 있습니다.
+병원에 처음 오신 분은 처음 오신 분 창구에서 등록 후 진료과에 접수하시기 바랍니다.</p>
+                                    </div>
+                            </li>
+                            <li>
+                            <i class="fas fa-desktop"></i>
+                                <div class="text_area_wrapper">
+                                <p class="text_area title">
+                                02. 진행상황
+                                </p>
+                            <p class="text_area">동일 예약시간 환자 중 접수한 순서대로 전광판에 성명이 보입니다.
+"예약시간"은 현재 진료중인 환자의 진료예약시간입니다.</p>
+                                    </div>
+                            </li>
+                            <li>
+                            <i class="fas fa-notes-medical"></i>
+                                <div class="text_area_wrapper">
+                                <p class="text_area title">
+                                03. 진료
+                                </p>
+                            <p class="text_area">담당직원의 안내에 따라 진료실에 들어가 의료진과 진료를 봅니다.
+진료실 안에서 진료 준비를 위해 대기하는 시간이 있을 수 있습니다.
+제증명, 의무기록사본이 필요한 경우 담당직원에게 미리 요청하시기 바랍니다.
+필요 시 신체검진을 할 수 있으므로 위아래가 분리된 옷을 입으시면 진료에 도움이 됩니다.</p>
+                                    </div>
+                            </li>
+                            <li>
+                            <i class="fas fa-user-nurse"></i>
+                                <div class="text_area_wrapper">
+                                <p class="text_area title">
+                                04. 진료후안내
+                                </p>
+                            <p class="text_area">진료가 끝나면 의료진의 처방에 따라 담당직원이 안내해 드립니다.
+검사 및 시술이 예정된 분은 준비사항을 안내받으실 수 있습니다.</p>
+                                    </div>
+                            </li>
+                            <li>
+                            <i class="fas fa-money-check"></i>
+                                <div class="text_area_wrapper">
+                                <p class="text_area title">
+                                05. 수납
+                                </p>
+                            <p class="text_area">진료비계산서(영수증)에 귀하가 가실 곳을 확인하시기 바랍니다.
+수납 창구 직원에게 외래에서 받으신 안내문을 전달하거나 병원등록번호를 알려주시면 수납이 가능하며
+하이패스가 등록되어 있는 경우 빠른 결제가 가능합니다.
+자동수납기에서 수납이 가능하나 자동 수납 도중 창구 방문이 필요한 경우가 있을 수 있습니다.
+(타과의뢰, 첫 선택진료 등)</p>
+                                    </div>
+                            </li>
+                            <li>
+                            <i class="fas fa-capsules"></i>
+                                <div class="text_area_wrapper">
+                                <p class="text_area title">
+                                06. 약처방전/귀가/입원
+                                </p>
+                            <p class="text_area">안녕히 가십시오. 다음 진료일에 뵙겠습니다.
+담당의사로부터 입원이 결정된 분은 입원창구(신관 1~10번, 서관 31~40번)로 가셔서 예약 또는 입원수속을
+하십시오.
+원외 처방전을 가지고 원하시는 (외부)약국에 가셔서 약을 받아 귀가하십시오.</p>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
+                
+                
+                
+            </div>
+            <footer>
+        <div class="footer_inner">
+            <div class="footer_top">
+                <ul>
+                    <li><a href="#">전남대학교병원</a></li>
+                    <li><a href="#">서울아산병원</a></li>
+                    <li><a href="#">건강inHiHoc</a></li>
+                </ul>
+            </div>
+            <div class="footer_top_middle">
+                <ul>
+                    <li><a href="#">찾아오시는길</a></li>
+                    <li><a href="#">주요전화번호</a></li>
+                    <li><a href="#">고객의소리</a></li>
+                    <li><a href="#">환자권리장전</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">장례식장</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">전화번호 : <span class="phone_number">062) 260-7111</span></a></li>
+                    <li><a href="#">FAX: 062) 260-7111</a></li>
+                </ul>
+            </div>
+            <div class="footer_middle">
+                <ul>
+                    
+                    <li><a href="#">광주광역시 북구 면양로 139번길51 (두암동) 광주병원</a></li>
+                </ul>
+            </div>
+            
+            <div class="copy_right">
+                <p>Copyright 2012 by Gwaingju hospitia All rights reserved</p>
+            </div>
+            
+            <div class="footer_bottom">
+                <a href="#" class="footer_btn">협력병원 +</a>
+                <a href="#" class="footer_btn">관련기관 +</a>
+            </div>
+        </div>
+    </footer>
+<script>
+
+          /*  $(".sub_page_menu_wrap ul > li").click(function(){
+                $(this).find(".sub_submenu").slideToggle();  
+            });
+    
+            //랭귀지버튼 클릭 start
+           $(".header_top .language_btn").click(function(){
+               $(".language_btn_submenu").toggleClass("active");
+           });
+        //랭귀지버튼 클릭 end
+            
+            
+                $(".header_bottom_wrap").mouseover(function(){
+                $(".header_bottom_submenu").stop().show();
+                $(".header_bottom_wrap").addClass("active");
+                $(".sub_page_menu_wrap").addClass("active");
+
+            }).mouseout(function(){
+                $(".header_bottom_submenu").stop().hide();
+                $(".header_bottom_wrap").removeClass("active");
+                $(".sub_page_menu_wrap").removeClass("active");
+            });*/
+    
+        //메인 gnb 호버 효과 //
+    
+      /*  const subli = document.querySelectorAll(".sub_page_title_menu")
+        console.log(subli)
+        const subMn = document.querySelectorAll(".sub_submenu")
+        console.log(subMn)
+        
+
+        for(var i=0; i<subli.length; i++){
+            subli[i].addEventListener("click",function(){
+                this.querySelector("ul").classList.toggle("active")
+            })
+        }
+
+    
+    
+        const btWrap = document.querySelector(".header_bottom_wrap")
+        const btSub = document.querySelector(".header_bottom_submenu")
+        
+        btWrap.addEventListener("mouseover",()=>{
+            btSub.style.display="block";
+            btWrap.classList.add("active")
+            document.querySelector(".sub_page_menu_wrap").classList.add("active")
+        });
+        btWrap.addEventListener("mouseout",()=>{
+            btSub.style.display="none";
+            btWrap.classList.remove("active")
+            document.querySelector(".sub_page_menu_wrap").classList.remove("active")
+        });
+        //메인 gnb 호버 효과 //
+        
+        const lngBtn = document.querySelector(".header_top .language_btn")
+        const lngBtnSm = document.querySelector(".language_btn_submenu")
+        var count = 0;
+    
+        lngBtn.addEventListener("click",()=>{
+            
+            count ++
+            
+            if(count%2 != 0){
+                lngBtnSm.style.opacity="1"
+            }else{
+                lngBtnSm.style.opacity="0"
+            }
+            
+            console.log(count)
+            
+            
+            
+        })
+    */
+</script>
+    </body>
